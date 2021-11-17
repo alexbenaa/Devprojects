@@ -1,0 +1,66 @@
+/* Corpo do site com imagem fixa */
+body{
+        background-image: url(/imagens/Sky_background_preview_d274.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+}
+/* Fonte bitwise-mx19 dos outros projetos */
+@font-face {
+    font-family: 'bitwise-mx19';
+    src: url(/fonts/Bitwise-m19x.ttf);
+}
+/* Titulos padrões */
+.title{
+    font-family: 'bitwise-mx19';
+    color: rgba(139, 233, 253, 1);
+    text-align: center;
+    font-size: 50px;
+}
+/* Subtitulos padrões */
+.subtitle{
+    font-family: 'bitwise-mx19';
+    color: rgba(255,85, 85, 1);
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Paragrafo */
+.paragrafo{
+    font-family: 'Comic Sans MS';
+    color: white;
+    text-shadow: black 2px 1px;
+    text-align: left;
+    text-indent: 2px;
+    font-size: 20px;
+}
+
+/* Minha paleta de cores padrão Dracula */
+
+.Green{color:rgba(80, 250, 123, 1) ;
+    font-weight: 900;
+}
+.Cyan{color: rgba(139, 233, 253, 1);}
+.Orange{color: rgba(255, 184, 108, 1);}
+.Pink{color: rgba(255, 121, 198, 1); }
+.Purple{color: rgba(189, 147, 249, 1);}
+.Red{color: rgba(255,85, 85, 1);
+    text-decoration: underline;
+}
+.Yellow{color: rgba(241, 250, 140, 1);}
+.White{color: rgba(255, 255, 255, 1);}
+
+
+/*Container*/
+
+.container{
+    width: 80%;
+    background-color: rgba(68, 71, 90, 0.8);
+    padding: 20px;
+    border-radius: 3%;
+    text-shadow: black 2px 2px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+}

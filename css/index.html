@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @font-face {
+        font-family: bitwise;
+        src: url(/fonts/Bitwise-m19x.ttf);
+    }
+    h1{
+        font-family: 'bitwise';
+        text-align: center;
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <div class="White transback">
+        <div class="container">
+            <h1 class="Cyan">Aprendendo CSS - INLINE/INTERNO/EXTERNO</h1>
+            <br><br>
+            <strong class="Green">style="color: red"</strong> -> Adiciona essa informação dentro de uma tag de
+            paragrafo,
+            criando um outro
+            elemento. O paragrafo todo, ficará vermelho. <strong class="Red">INLINE</strong> <br><br>
+            <strong class="Green">p{color: red;}</strong> -> Adiciona tudo o que for relacionado a paragrafo na cor
+            vermelha. <strong class="Red">INTERNO</strong><br><br>
+            <strong class="Green">link href="Nome do arquivo CSS" rel="stylessheet"</strong> -> Link o arquivo .css ao
+            html
+            deste documento. <br>
+            Lembrando que é necessário criar um novo arquivo com o nome de <strong class="Red">style.css</strong>
+            <br><br>
+            <strong class="Green">id="nome do id"</strong> -> Adiciona uma id ao elemento. Cada id é único, não da para
+            utilizar em outra estrutura. No arquivo CSS precisa utilizar <strong class="Green"> #"nome do
+                ID"</strong>.Dá
+            para utilizar com imagens e a tag de ancoragem. <br><br>
+            <strong class="Green">class="nome da classe"</strong> -> Adiciona uma classe ao elemento. Uma classe pode
+            ser
+            utilizada em vários elementos. No arquivo CSS precisar utilizar <strong class="redText">."nome da
+                classe"</strong>
+        </div>
+    </div>
+
+
+    <!-- Tags Elementos -->
+    <div class="White transback">
+        <div class="container">
+            <h1 class="Cyan">Tags e Elementos do "Arquivo.css"</h1>
+            <strong class="Red">BackGroud</strong><br><br>
+            <strong class="Green">background-image: url("Endereço da imagem")</strong> -> Utiliza este tipo de estrutura
+            pra adicionar uma imagem de fundo, pode ser utilizando tanto para texto como para body <br><br>
+            <strong class="Green">background-repeat: no-repeat;</strong> -> Utilizado para não repetir a imagem dentro
+            da estrutura do código. <br><br>
+            <strong class="Green">background-size:cover</strong> -> Define o tamanho da imagem, no modo cover ele alinha
+            o texto para a página toda.
+            <strong class="Green">background-attachment: fixed</strong> -> O backgroud rola junto com o scroll
+        </div>
+    </div>
+
+
+    <!-- Unidades de medida -->
+    <div class="White transback">
+        <div class="container">
+            <h1 class="Cyan">Unidades absolutas</h1>
+            <strong class="Red">Unidades de medidas Fixas:</strong>
+            <br>
+            <strong class="Green">cm{width:1cm , height:1cm}</strong> -> Unidade de medida em centimetro
+            <br>
+            <strong class="Green">mm{width:1mm ; height:1mm}</strong> -> Unidade de medida em milimetros
+            <br>
+            <strong class="Green">in{width:1in ; height:1in}</strong> -> Unidade de medida em Polegadas
+            <br>
+            <strong class="Green">px{width:1px ; height:1px}</strong> -> Unidade de medida em Pixel, e a menor un. de
+            medida.
+            <br>
+            <strong class="Green">pt{width:1pt ; height:1pt}</strong> -> Unidade de medida em ponto, ela é relativa ao
+            Pixel
+            <br>
+            <strong class="Green">pc{width:1pc ; height:1pc}</strong> -> Unidade Picas, ela é medida como : 12 px
+            <br><br>
+            <strong class="Red">Unidades relativas</strong>
+            <br>
+            <strong class="Green">Uma div dentro de outra div, vai herdar o tamanho da div pai</strong>
+            <br>
+            <strong class="Green">vm{width: 50vm; height: 50vm;}</strong> -> Faz com que o tamanho do objeto fique em
+            50%,
+            proporcional a tela.
+            <br>
+            <strong class="Green">vh{width: 50vh; height: 50vh;}</strong> -> Faz com que a altura do objeto se ajuste ao
+            tamanho da tela, neste caso está com 50%.
+            <br>
+            <strong class="Green">vmin{width: 50vmin; height: 50vmin;}</strong> -> O objeto fica relativo ao tamanho
+            minimo,
+            exemplo: Se a largura ficar menor, ele vai reduzir referente a esta grandeza
+            <br>
+            <strong class="Green">vmax{width: 50vmax; height: 50vmax;}</strong> Ele é oposto do vmin
+        </div>
+    </div>
+    <div id="sep50">
+        <strong>Estrutura com width 50% de tamanho.</strong>
+    </div>
+    <div id="sep30">
+        <strong>Estrutura com width 30% de tamanho </strong>
+    </div>
+    <!-- Estrutura de bordas -->
+    <div class="White transback">
+        <div class="container">
+            <h1 class="Cyan">Estruturas de bordas</h1>
+            <strong class="Red">Margin e Padding</strong>
+            <br><br>
+            <strong class="Green">margin: 20px;</strong> -> Define o tamanho da margem em 20 Px. <br>
+            <strong class="Green">padding: 20px;</strong> -> Define o tamanho da margem só que ao oposto do <strong
+                class="Green">margin</strong> a estrutura do padding ajusta para dentr <br>
+            <strong class="Green">border: color;</strong> -> Define a cor da borda. <br>
+            <strong class="Green">border-style: "estilo"</strong> -> Define o estilo da borda. <br>
+            <strong class="Green">border-width: 0px</strong> -> Define a largura da borda. <br>
+            <strong class="Green">border-radius: 0px</strong> -> Define o arredondamento da borda. <br>
+            <strong class="Green">outilne</strong> -> É uma estrutura de borda porém ela não faz parte do box size. <br>
+            <strong class="Green">box-sizing</strong> -> É possível alterar o tamanho do box/borda.
+        </div>
+    </div>
+    <!-- Elementos de texto -->
+    <div    class="White transback">
+        <div class="container"> 
+            <h1 class="Cyan">Tratamento de textos</h1>
+            <div>
+                <h4>
+                    <strong class="Red">Elementos de texto</strong><br>
+                    <strong class="Green">text-ident</strong> ->  irá identar o texto a cada paragrafo ou definição de sua escolha <br>
+                    <strong class="Green">text-decoration</strong>    ->  Irá acrescentar ao elemento de texto uma deocaração: uderline, overline, line-trough. <br>
+                    <strong class="Green">letter-space</strong> ->  Define o espaçamento entre as letras. <br>
+                    <strong class="Green">line-heigth</strong>    ->  Define a altura das linhas. <br>
+                    <strong class="Green">word-spacing</strong>   ->  Define a distancia entre as palavras <br>
+                    <strong class="Green">text-shadow</strong>    -> Define a sobre da palavra, 2px(para a direita) 2px(para baixo) 2px(raio de desfoque) <br>
+                    <br>
+                    <strong class="Red">Familias genéricas de fontes</strong><br>    
+                    <strong class="Green">Com serifa</strong> -> fontes com bordas mais definidas <br>
+                    <strong class="Green">Sem serifa</strong> -> fontes sem as bordas definidas. <br>
+                    <strong class="Green">Monospace</strong>  -> Qualquer palavra de 5 letras terá o mesmo tamanho. <br>
+                    <strong class="Red">#Diferença entre é por exemplo: Times New Roman é uma familia de fonte "com serifa"</strong> <br>
+                    <strong class="Green">font-family: "Comic Sans MS", sans-serif</strong>    -> Pode ser utilizado mais de uma fonte, caso uma não exista a outra irá assumir. <br>
+                    <strong class="Green">font-style: italic</strong>    -> Define o estilo da fonte, itálico.  <br>
+                    <strong>font-weight</strong>    ->  Define o negrito da fonte. <br>
+
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <a href="http://127.0.0.1:5500/index.html" class="link">
+        Sumário</a> 
+</body>
+
+</html>

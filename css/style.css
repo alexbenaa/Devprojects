@@ -1,0 +1,101 @@
+/*Estrutura de cores Dracula Themes*/
+.Green{color:rgba(80, 250, 123, 1) ;}
+.Cyan{color: rgba(139, 233, 253, 1);}
+.Orange{color: rgba(255, 184, 108, 1);}
+.Pink{color: rgba(255, 121, 198, 1); }
+.Purple{color: rgba(189, 147, 249, 1);}
+.Red{color: rgba(255,85, 85, 1);
+    font-weight: 900;
+    width: 3em;
+    text-shadow: none;
+}
+.Yellow{color: rgba(241, 250, 140, 1);}
+.White{color: rgba(255, 255, 255, 1);}
+
+/*Estrutura do corpo*/
+body{
+    background-image: url(../imagens/Sky_background_preview_d274.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*Estrutura de tamanho relativo 50% da largura*/
+#sep50{
+    color:blueviolet;
+    background-color: aqua ;
+    width: 50vw;
+}
+/*Estrutura de tamanho relativo 30% da largura*/
+#sep30{
+    color:blueviolet;
+    background-color: aqua ;
+    width: 30vw;
+}
+/*Transparencia da div*/
+.transback{
+    background-color: rgba(40, 42, 54, 0.7);
+    font-size: 18px;
+    border: none;
+    margin: 60px;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+/*Container*/
+
+.container{
+    background-color: rgba(68, 71, 90, 0.8);
+    padding: 50px;
+    border-radius: 3%;
+    text-shadow: black 2px 2px;
+    font-family: "Comic Sans MS";
+}
+
+.link{
+    background-color: #3d4053;
+    color: cyan;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    border-color: cyan ;
+    border-style: solid;
+}
+
+.link:hover{
+    color: #3d4053;
+    background-color: cyan;
+    border-style: solid;
+    border-color: #3d4053;
+    
+}
+
+ol{
+    list-style-position: inside;
+    margin-left: 5%;
+    margin-right: 5%; 
+    margin-top: 0%; 
+    padding: 2px;
+    background-color: rgba(68, 71, 90, 0.5);
+    border-radius: 2px;
+    text-shadow: none;
+}
+
+li{
+    color: rgba(80, 250, 123, 1);
+    border: 1px solid;
+    background-color: #3d4053;
+    margin: 10px;
+    padding: 2px;
+    font-size: 2vmax;
+    border-radius: 10px;
+}
+a{text-decoration: none;}
+
+li:hover{
+    color: #3d4053;
+    background-color: rgba(80, 250, 123, 1);
+}
