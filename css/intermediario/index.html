@@ -11,6 +11,8 @@
 
 <body>
     <h1 class="title">CSS "Intermediario"</h1>
+
+    <!-- Container de explicação do Display -->
     <div class="container">
         <h2 class="subtitle">Display</h2>
         <p class="paragrafo">
@@ -23,17 +25,58 @@
             toda a linha, a quebra não irá acontecer. <br>
             <b class="Green">display "none"</b> -> O elemento não é mostrado, da uma aparencia de não existir mais. <br>
         </p>
-        </div>
+    </div>
+
+    <!-- Estrutura de explicação sobre o Overflow -->
     <div class="container">
         <h2 class="subtitle">Overflow - implementação</h2>
         <p class="paragrafo">
-            <b class="Pink">Overflow -> Apliance utilizada em casos que o elemento é maior que a borda ou layout de fundo.</b> <br>
-            <b class="Green">overflow: visible;</b> ->  Valor padrão do overflow
-            <b class="Green">overflow: scroll;</b>   -> vai criar uma overflow com Scroll para, que tenha acesso à uma barra de rolagem. <br>
-            <b class="Green">overflow: hidden;</b>   -> vai esconder, caso o conteúdo ultrapasse o objeto. <br>
-            
+            <b class="Pink">Overflow -> Apliance utilizada em casos que o elemento é maior que a borda ou layout de
+                fundo.</b> <br>
+            <b class="Green">overflow: visible;</b> -> Valor padrão do overflow <br>
+            <b class="Green">overflow: scroll;</b> -> vai criar uma overflow com Scroll para, que tenha acesso à uma
+            barra de rolagem. <br>
+            <b class="Green">overflow: hidden;</b> -> vai esconder, caso o conteúdo ultrapasse o objeto. <br>
+            <b class="Green">overflow: auto;</b> -> Adiciona o scroll automáticamente, proporcional ao conteúdo. <br>
+            <b class="Green">overflow-y: visible; </b> -> Adiciona uma visibilidade no eicho especificado, funciona
+            também em overflow-x. <br>
+        <h2 class="subtitle">Exemplo</h2>
+        <div id="object1">
+            <img src="/imagens/71+mDoHG4mL.png" alt="">
+        </div>
         </p>
+    </div>}
+
+    <!-- Estrutura do alinhamento horizontal -->
+    <div class="container">
+        <h2 class="subtitle">Alinhamento horizontal</h2>
+        <p class="paragrafo">
+            <b class="Red">É uma maneira de centralizar os elementos/div's ou posicionar da maneira desejada. </b> <br>
+            <b class="Green">margin-left: auto;</b> <b class="Green"> margin-right: auto;</b> -> Daria para centralizar
+            um texto desta maneira e funciona apenas para textos, <b class="Red"> imagens não.</b> <br>
+            <b class="Pink">Utilizando os alinhamentos como: display: block; ou display:inline-block; é necessário
+                acrescentar o elemento dentrou de um container e depois utiliza os estilos: text-aling:Left/Center</b>
+            <br>
+        </p>
+    </div>
+    <!-- Teste de objetos e posições relativas -->
+    <div class="container">
+        <h2 class="subtitle">Propriedades Position Fixed e Relative</h2>
+        <p class="paragrafo">
+            <b class="Green">position: fixed;</b> -> É a posição fixa , por padrão dos elmentos dentro de uma div ou
+            container. <br>
+            <b class="Green">position: relative</b> -> Desta maneira é possível, sobrepor objetos dentro de uma div.
+        </p>
+        <h2 class="subtitle">Exemplo de Relative</h2>
+        <div class="objectSquadS">
+            <div class="objectSquad objectSquad1"></div>
+            <div class="objectSquad objectSquad2"></div>
+            <div class="objectSquad objectSquad3"></div>
+        </div>
     </div>
 </body>
 
 </html>
+
+<!-- 
+ -->
