@@ -14,7 +14,7 @@
 
     <!-- Container de explicação do Display -->
     <div class="container">
-        <h2 class="subtitle">Display</h2>
+        <h2 class="subtitle">Display / Float</h2>
         <p class="paragrafo">
             <b class="Green"> display "block"</b> -> tipo de display que ocupa a linha toda. É possível editar a largura
             do elemento <br>
@@ -24,6 +24,8 @@
             <b class="Green">display "inline block"</b> -> É possível setar um tamanho de largura mas, ele não ocupa
             toda a linha, a quebra não irá acontecer. <br>
             <b class="Green">display "none"</b> -> O elemento não é mostrado, da uma aparencia de não existir mais. <br>
+            <b class="Green">float:right</b>    ->  Ele irá flutuar ao lado do texto ou elemento do container. Estrutura bastante utilizada quando - -se deseja acrescentar mais elementos dentro de um botão. <br>
+            <b class="Green">clear:none;</b>  ->  É o oposto do float, ele irá tirar a flutuação do elemento, ele tem as opções: <br> <b class="Green">clear:both;</b>    ->  irá dar um clear em ambos os lados <br> <b class="Green">clear:left;</b> -> clear no lado esquerdo e o <b class="Red">right</b> para o lado direto.  
         </p>
     </div>
 
@@ -63,7 +65,7 @@
     <div class="container">
         <h2 class="subtitle">Propriedades Position Fixed e Relative</h2>
         <p class="paragrafo">
-            <b class="Green">position: fixed;</b> -> É a posição fixa , por padrão dos elmentos dentro de uma div ou
+            <b class="Green">position: static;</b> -> É a posição fixa , por padrão dos elmentos dentro de uma div ou
             container. <br>
             <b class="Green">position: relative</b> -> Desta maneira é possível, sobrepor objetos dentro de uma div.
         </p>
@@ -74,17 +76,42 @@
             <div class="objectSquad objectSquad3"></div>
         </div>
     </div>
-    <!-- Estrutura de posição Absoluta -->
+    <!-- Estruturas de posicionamento -->
     <div class="container">
-        <h2 class="subtitle">Posição Absoluta</h2>
+        <h2 class="subtitle">Tipos de Posições</h2>
+        <p class="paragrafo"> 
+            <b class="Green">"position:fixed;"</b>   ->  Vai deixar o elemento fixo ao Viewport. mesmo com a rolagem da página ele irá ficar fixo. <br>
+            <b class="Green">˜position:absolut;˜</b>  ->  posição absoluta assume uma estrutura, na qual, se torna sem tamanho para os outros elementos e consegue-se utilizar "left: 0px;", para colar o testo na esquerda, desde que : O ELEMENTO PAI, SEJA UM ELEMENTO DE "POSITION: RELATIVE;" <br>
+            <b class="Green">"position:sticky"</b>  ->  Irá funcionar como um tipo de "Menu" toda a estrutura acomanhará a barra de rolagem, que será relativo a sua configuração de top. <br>
+            <b></b>
+        </p>   
+    </div>
+
+     <!-- Estrutura de alinhamento vertica -->
+    <div class="container">
+        <h2 class="subtitle">Posicionamento Vertical</h2>
         <p class="paragrafo">
-            <b class="Orange"> *A posição absoluta assume uma estrutura, na qual, se torna sem tamanho para os outros elementos e consegue-se utilizar "left: 0px;", para colar o testo na esquerda, desde que : O ELEMENTO PAI, SEJA UM ELEMENTO DE "POSITION: RELATIVE;"</b>
+                <b class="Green ">line-height: #px;</b>    ->  Dá para alinha o texto desta maneira mas, ele não ficará escalonavel. <br>
+                <b class="Green">padding-top:#pix; e padding-botton:#pix;</b> ->  Da para se fazer um alinhamento vertical porém, você fica limitado a um texto ou objeto, dentro do elemento de box. <br>
+                <b class="Green">transform: translatey();</b> -> Utilizado alinha o texto de baixo para cima, removendo o tamanho da linha. <br>
+                <b class="Orange">Como utilizar: Primeiro alinha acrescenta "top:50%;" para que o texto fique no centro, depois "transform: translate(x, y);" com o sinal negativo, para ele remover 50% pra cima, assim remove a linha e o texto fica centralizado ao botão ou container pai.</b> <br>
         </p>
     </div>
 
+    <!-- Estrutura de Responsividade -->
+    <div class="container">
+        <h2 class="subtitle">Responsividade / AutoAjuste</h2>
+        <p class="paragrafo">
+            <b class="Orange"><"meta name="viewport" content="width=device-width, initial-scale=1.0"></b>    ->  Meta responsável por deixar os elementos responsivos dentro da página.
+        </p>
+        <h2 class="subtitle">Midia Query</h2>
+        <p class="paragrafo">
+            <b class="Orange">O Media Query, vai dar um comportamento diferente para o site, dependendo do tamanho da tela ou device.</b> <br>
+            <b class="Green">@media "screen" and (max-width: 400px)</b> -> @media serve para delimitar o tipo da midia, na qual o texto se comportar; screen serve para informar a média que é do tipo TELA; max-width  indica que -- quando a tela chegar ao tamanho X o @midia irá executar uma ação, essa ação, deve ser colocada dentro das chaves {#}'
+            <b class="Green">Mobile First</b> É a estrutura montado em mobile primeiro e a estrutura para computadores, montada dentro do media Query
+            
+        </p>
+    </div>
 </body>
 
 </html>
-
-<!-- 
- -->
