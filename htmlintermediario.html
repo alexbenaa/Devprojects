@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/css/htmlintermediario.css">
+      <title>HTML - Intermediário</title>
+</head>
+ 
+<body>
+
+      <div class="container">
+            <h1>HTML Intermediário</h1>
+            <h2>ESTRUTURA DAS FORMS</h2>
+            <p>
+                  <!-- Todas as estrutura de um formulário -->
+                  <b>{form}</b>     ->    The form element represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing. <br>
+                  <b>(method="GET")</b>    ->   Corresponde ao método HTTP GET; os dados do formulário são anexados ao URI do atributo de ação com um '?' como separador e o URI resultante é enviado ao servidor. Use este método quando o formulário não tiver efeitos colaterais e contiver apenas caracteres ASCII. <br>
+                  <b>(method="POST")</b>  ->    Corresponde ao método HTTP POST; os dados do formulário são incluídos no corpo do formulário e enviados ao servidor. <br>
+                  <b>a(ction="/cadastro")</b>     ->    Ação de enviar oque coletou para o destino /cadastro <br>
+                  <b>(method) e (action) são estruturas internas de uma tag ou seja, devem estar dentro da tag {form}</b> <br>
+                  <b>{input type="text" name="email"}</b>    ->    Entrada dos dados, o (type) indica o tipo desta entrada, já (name) é o nome que essa entrada vai receber. <br>
+                  <b>input type="submit"</b>    ->    O submit servira como um botão, para envio do formulário, não precisa de um nome. <br>
+                  <b>Seu BACKEND precisa saber qual o tipo de inserção do input</b>
+                  <b>{input type="password"}</b>      ->    O type (password) não mostra os caracteres digitados na caixa do form. <br>
+                  <b>Se utilizar o type (password) não utilize o GET pois, ele vai mostrar a senha</b> <br>
+                  <b>nput type="checkbox" name="livro" value="Livro-2"</b>    ->    Acrescenta um value, para difirencia as duas opções <br>
+                  <b>{input type="radio" name="gender" value="M" checked}</b> ->    Radio é o input de bolinha, se colocar os mesmos nomes, no exemplo ficou "gender", ele irá selecionar um ou outro e (checked), para manter uma das opções selecionadas. <br>
+                  <b>{input type="reset" value="Limpar"}</b>     ->    Resetará as informações da página, (value) irá acrescentar o valor para o botão <br>
+            
+                  <!-- SELECT -->
+                  <b>{select name="cidade" size="1"}</b>    ->    O (select) cria uma dropbox, name será o atributo que a entrada vai receber e size é o tanto de itens da listas do dropbox. <br>
+                  <b>{option value="guapiacu" selected>Guapiaçu}</b>    ->    Para enviar ao backend, ele vai utilizar o (value), já a opção (seleted) indica a posição inicial do selected, no caso Guapiaçu <br>
+                  
+                  <!-- TEXTAREA -->
+                  <b> {textarea name="mensagem">}</b> ->    textarea geralmente é utilizado para caixas de texto ou contatos. <br>
+
+            </p>
+
+            <!-- Tags Semanticas -->
+            <h2>Estrutura de Tags Semanticas</h2>
+            
+            <p>
+                  <b>TAGS SEMANTICAS SÃO UTILIZADAS PARA -- AUXILIAR O GOOGLE NO RANKEAMENTO DO SITE.</b> <br>
+                  <b>{header}</b>   ->    Tag que substitui a tag {div} , basicamente é uma tag de cabeçalho. <br>
+                  <b>{nav}</b>      ->    Tag de navegação, que tamb[em vai substituir uma {div}. <br>
+                  <b>{footer}</b>   ->    É uma div de roda pé, utilizado para conteudos de contato. <br>
+                  <b>{main}</b>     ->    É a tag principal da página, pode ter apenas uma por página. <br>
+                  <b>{section}</b>  ->    É uma seção do site, facilita a organização. Um exemplo: as noticias do globo.com, seperadas por miniaturas
+                  <b>{article}</b>  ->    O conteúdo desta tag, deve fazer sentido independente para a pagina. Um exemplo: são os artigos dentro das seções.
+            </p>
+      </div>
+      <div class="container">
+            <h2>Formulário de busca no Youtube</h2>
+            <b>Nesta estrutura foi utilizado o method get e a action: https://www.youtube.com/results</b> <br><br>
+            <form method="get" action="https://www.youtube.com/results"><br>
+                  <b>-> Get, entrada de dados>>></b><input type="text" name="search_query"> <br><br>
+                  <b>-> Sumit, cria um botão de enviar>>></b><input type="submit"> <br> <br>
+                  <b> -> Password a senha ficará oculta>>></b><input type="password" name="senha"><br> <br>
+                  
+                  <!-- Estrutura do CheckBox -->
+                  <b> -> Checkbox>>><input type="checkbox" name="livro" value="Livro-1">Livro 1</b><br> <br>
+                  <b> -> Checkbox>>><input type="checkbox" name="livro" value="Livro-2">Livro 2</b><br><br>
+                 
+                  <!-- Estrutura do Radio -->
+                  <b> -> Radio>>><input type="radio" name="gender" value="M" checked>Masculino</b><br><br>
+                  <b> -> Radio>>><input type="radio" name="gender" value="F">Feminino</b><br><br>
+                 
+                  <!-- Input de RESET -->
+                  <b>-> Reset <input type="reset" value="Limpar"></b><br>
+
+                  <!-- TAGs semanticas -->
+            
+
+            </form>
+            <!-- Estrutura de uma dropbox com SELECT -->
+            <h2>Estrutura do SELECT</h2>
+            <select name="cidade" size="1">
+                  <option value="guapiacu" selected>Guapiaçu</option>
+                  <option value="rio-preto">São José do Rio Preto</option>
+                  <option value="palestina">Palestina</option>
+                  <option value="nova-granada">Nova Granada</option>
+                  <option value="aracatuba">Araçatuba</option>
+                  <option value="birigui">Birigui</option>
+                  <input type="submit" value="Enviar">
+            </select>
+            
+            <h2>Estrutura do TEXTAREA</h2>
+            <form method="get">
+            <b><input type="text" name="assunto"></b> <br>
+            <textarea name="mensagem"></textarea>
+            <input type="submit">
+            </form>
+
+      </div>
+</body>
+</html>
