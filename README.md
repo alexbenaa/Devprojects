@@ -20,8 +20,8 @@
 > <li><del>CSS - Básico. ✅</li>
 > <li><del>CSS - Intermediário. ✅</li>
 > <li><del>HTML - Intermediário. ✅</li>
-> <li>Projeto - Página de Captura. 🚧</li>
-> <li>Negócios - Preparando sua primeira Venda</li>
+> <li>Projeto - Página de Captura. ✅</li>
+> <li>Negócios - Preparando sua primeira Venda.  ✅</li>
 > <li>Javascript - Básico</li>
 > <li>Javascript - Intermediário</li>
 > <li>Projeto - Churrascômetro</li>
